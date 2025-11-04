@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Bio Page</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Advanced Webpage</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header>
-    <h1>Cybersecurity Student</h1>
-    <nav>
-        <a href="#about">About</a> | 
-        <a href="#video">Video</a> | 
-        <a href="#contact">Contact</a>
-    </nav>
+<header class="site-header">
+<h1>My Advanced Webpage</h1>
+<nav aria-label="Primary">
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<main>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a cybersecurity student with interests in ethical hacking, digital forensics, and web security. 
-        My career goal is to become a penetration tester and help organizations protect their systems from threats. 
-        I enjoy experimenting with my home lab and learning new tools in Linux and Windows environments.</p>
-    </section>
 
-    <article id="video">
-        <h2>My Favorite Video</h2>
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            frameborder="0" allowfullscreen>
-        </iframe>
-    </article>
+<main id="main-content">
+<section id="about">
+<h2>About This Page</h2>
+<p>This section explains the purpose of the site and introduces advanced HTML structure.</p>
+<figure>
+<img src="image1.jpg" alt="HTML and CSS code example" />
+<figcaption>Figure 1: Clean semantic code improves readability and accessibility.</figcaption>
+</figure>
+</section>
 
-    <aside>
-        <h3>Quick Facts</h3>
-        <ul>
-            <li>Favorite Food: Pizza</li>
-            <li>Hobby: Gaming & coding</li>
-            <li>Fun Fact: I built my own PC for cybersecurity labs</li>
-        </ul>
-    </aside>
 
-    <!-- Add this block -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Course-related messages only — no personal contact info shared.</p>
-    </section>
-    <!-- End added block -->
+<section id="gallery">
+<h2>Image Gallery</h2>
+<p>Preview of design samples will go here later.</p>
+</section>
+
+
+<section id="contact">
+<h2>Contact Form</h2>
+<form action="#" method="post">
+<div class="field">
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required />
+</div>
+<div class="field">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required />
+</div>
+<div class="field">
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="4" required></textarea>
+</div>
+<button type="submit">Send</button>
+</form>
+</section>
 </main>
 
-<footer>
-    <p>&copy; 2025 Cybersecurity Student. All rights reserved.</p>
-</footer>
 
+<footer class="site-footer">
+<p>&copy; 2025 Web Technologies Essentials</p>
+</footer>
 </body>
 </html>
-
-
